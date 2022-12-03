@@ -1,0 +1,276 @@
+.whole-cart {
+    margin-bottom: 7vw;
+}
+
+.title-n-trashcan {
+    display: flex;
+}
+
+.title {
+    border-radius: 1.5vw;
+    background-color: RGB(24, 199, 167);
+    display: flex;
+    height: 4.4vw;
+    margin: 4vw 3vw;
+    box-shadow: 0 0.5vw 0.5vw -0.3vw #7f8385;
+}
+
+.title img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%);
+    height: 3.5vw;
+    margin: auto 0 auto 2vw;
+}
+
+.title p {
+    font-size: 1.7vw;
+    color: white;
+    margin: auto 4vw;
+}
+
+.trashcan {
+    margin: auto 0;
+    background-color: transparent;
+    border: inherit;
+    border-radius: 5vw;
+}
+
+.trashcan:disabled div:hover {
+    background-color: white;
+}
+
+.trashcan div {
+    box-shadow: 0 0.5vw 0.5vw -0.3vw #7f8385;
+    border: 0.15vw solid #41AEA8;
+    border-radius: 100vw;
+    transition: .4s;
+    background-color: white;
+    height: 4vw;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.trashcan div:hover {
+    background-color: #fdfb6c;
+}
+
+.trashcan img {
+    width: 2.5vw;
+    margin: auto 0.5vw;
+}
+
+.product-card {
+    box-shadow: 0 0.27vw 1.11vw -0.2vw rgb(66, 66, 66);
+    background-color: white;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3vw 1vw;
+    height: 6vw;
+    width: 50vw;
+}
+
+.card-element {
+    margin: auto 1.4vw auto 0;
+}
+
+.product-img {
+    width: 6vw;
+    margin-left: 1.4vw;
+}
+
+.lines {
+    border: none;
+    border-left: 0.15vw solid #B9B9B9;
+    height: 4vw;
+    width: 1px;
+}
+
+.h-lines {
+    border: none;
+    width: 12vw;
+    height: 0.15vw;
+    margin: 1vw auto 0;
+    background-color: #B9B9B9;
+}
+
+.name {
+    font-size: 1vw;
+    font-weight: bolder;
+    width: 20vw;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.name p {
+    margin: auto;
+}
+
+.product-price {
+    text-decoration: underline;
+    color: #2B91FF;
+}
+
+.quantity {
+    border: 0.11vw solid #3A9B78;
+    border-radius: 100vw;
+    padding: 0.5vw 1vw;
+    display: flex;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.quantity img {
+    width: 1.5vw;
+    cursor: pointer;
+}
+
+.quantity input {
+    display: block;
+    margin: auto 1vw;
+    text-align: center;
+    width: 1.5vw;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: default;
+}
+
+.card-trashcan {
+    cursor: pointer;
+}
+
+.card-trashcan div {
+    margin: 0;
+    height: 4vw;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.card-trashcan img {
+    height: 2.5vw;
+    margin: auto 0;
+}
+
+.total-box {
+    float: right;
+    background-color: white;
+    margin-right: 3vw;
+    width: 20vw;
+    border: 0.11vw solid #41AEA8;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.total {
+    margin: 2.5vw auto 0;
+    padding: 0.5vw 0;
+    border: 0.3vw solid #2CCDB0;
+    border-radius: 0.7vw;
+    width: 16vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-number {
+    margin: 1vw auto;
+    font-size: 1.7vw;
+    color: #3DB448;
+    text-decoration: underline;
+}
+
+.total .total-title {
+    margin-top: 1vw;
+    margin-bottom: 0;
+    line-height: 2vw;
+}
+
+.total-title {
+    font-size: 1.7vw;
+    color: #A0A0A0;
+}
+
+.total-title span {
+    color: #04B593;
+}
+
+.empty-cart-text {
+    margin-left: 3.5vw;
+}
+
+.empty-cart-text span {
+    transition: .4s;
+    text-decoration: underline transparent;
+}
+
+.empty-cart-text span:hover {
+    color: #039678;
+    text-decoration-color: #039678;
+}
+
+.start-to-fill:hover {
+    text-decoration: none;
+}
+
+.pay-btn {
+    text-align: center;
+    margin: 2vw auto;
+    text-decoration: none;
+    background-color: #05B593;
+    font-size: 1.4vw;
+    width: 12vw;
+    padding: 0.6vw 0;
+    border: none;
+    border-radius: 1.3vw;
+    color: white;
+    transition: .3s;
+}
+
+.pay-btn:hover {
+    background-color: #0a8169;
+    box-shadow: 0 0.5vw 0.5vw -0.3vw #7f8385;
+}
+
+.pay-btn:disabled {
+    background-color: #10cea8;
+}
+
+.dpt-select {
+    margin-bottom: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.tight-up {
+    margin: auto 2vw;
+}
+
+.page-item.active .page-link {
+    z-index: 0;
+}
+
+.successText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.successText .total-title {
+    margin-bottom: 2vw;
+}

@@ -1,0 +1,89 @@
+#sidebar{
+    background: #1a4163;
+    transition: .5s;
+}
+
+#sidebar ul li a{
+    transition: .3s;
+}
+.card-footer:last-child {
+    border-radius: 0 0 20px 20px;
+}
+.card-u-1{
+    background: #c7c7ff;
+    border-radius: 20px;
+    
+}
+.card-u-1 a{
+    transition: 0.3s;
+}
+.card-u-1 a:hover{
+    background: #9c9cd4;
+}
+.card-u-2{
+    background: #f3bbe1;
+    border-radius: 20px;
+}
+.card-u-2 a{
+    transition: 0.3s;
+}
+.card-u-2 a:hover{
+    background: #cf8bba;
+}
+.card-u-3{
+    background: #a9ecbf;
+    border-radius: 20px;
+}
+.card-u-3 a{
+    transition: 0.3s;
+}
+.card-u-3 a:hover{
+    background: #64be82;
+}
+.card-u-4{
+    background: #ffd8be;
+    border-radius: 20px;
+}
+.info-cards{
+    padding: 1.25rem 0;
+}
+.text-u-1{
+    color: rgba(149,149,255,1);
+}
+.text-u-2{
+    color: rgb(220, 91, 183,1);
+}
+.text-u-3{
+    color: rgba(66,193,110,1);
+}
+.text-u-4{
+    color: rgba(252,161,71,1);
+}
+.cards-u{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*Ultima tarjeta*/
+.cards-u-black{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.card-u-5{ 
+    background-color:#929292;
+    border-radius: 20px;
+    
+}
+.text-u-5{
+    color:#5f5840;
+}
+
+.out-of-stock {
+    display: flex;
+}
+
+.out-of-stock div {
+    margin: auto;
+}

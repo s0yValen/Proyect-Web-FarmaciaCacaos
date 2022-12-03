@@ -1,0 +1,39 @@
+{
+  "name": "cacaosfarmacy",
+  "version": "1.0.0",
+  "description": "Farmacia online Cacaos Company Farmacy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon back/server",
+    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false && NODE_OPTIONS=--openssl-legacy-provider && npm install --force --prefix front && npm run build --prefix front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-MinTIC-Power-Rangers-AKA-Los-Cacaos/MinTIC-Project-Ciclo-4.git"
+  },
+  "author": "Los Cacaos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-MinTIC-Power-Rangers-AKA-Los-Cacaos/MinTIC-Project-Ciclo-4/issues"
+  },
+  "homepage": "https://github.com/The-MinTIC-Power-Rangers-AKA-Los-Cacaos/MinTIC-Project-Ciclo-4#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "node-fetch": "^3.2.10",
+    "nodemailer": "^6.8.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

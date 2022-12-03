@@ -1,0 +1,17 @@
+.bannerContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3vw auto 0;
+}
+
+.imagenContainer {
+  width: 85%;
+}
+
+.imagenContainer img {
+  border-radius: 0.7vw;
+  box-shadow: 0 1.5vw 1.5vw -0.8vw #a7abad;
+}
+
+

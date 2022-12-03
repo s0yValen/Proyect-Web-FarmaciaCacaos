@@ -1,0 +1,142 @@
+.success-checkmark {
+    width: 4.25vw;
+    height: 6.12vw;
+    margin: 10vw auto 5vw;
+    
+    .check-icon {
+        width: 4.25vw;
+        height: 4.25vw;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 0.21vw solid #4CAF50;
+        
+        &::before {
+            top: 0.15vw;
+            left: -0.1vw;
+            width: 1.59vw;
+            transform-origin: 100% 50%;
+            border-radius: 5.32vw 0 0 5.32vw;
+        }
+        
+        &::after {
+            top: 0;
+            left: 1.59vw;
+            width: 3.19vw;
+            transform-origin: 0 50%;
+            border-radius: 0 5.32vw 5.32vw 0;
+            animation: rotate-circle 4.25s ease-in;
+        }
+        
+        &::before, &::after {
+            content: '';
+            height: 5.32vw;
+            position: absolute;
+            background: transparent;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-line {
+            height: 0.26vw;
+            background-color: #4CAF50;
+            display: block;
+            border-radius: 0.1vw;
+            position: absolute;
+            z-index: 10;
+            
+            &.line-tip {
+                top: 2.44vw;
+                left: 0.74vw;
+                width: 1.33vw;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+            
+            &.line-long {
+                top: 2vw;
+                right: 0.42vw;
+                width: 2.5vw;
+                transform: rotate(-45deg);
+                animation: icon-line-long 0.75s;
+            }
+        }
+        
+        .icon-circle {
+            top: -0.21vw;
+            left: -0.21vw;
+            z-index: 10;
+            width: 4.25vw;
+            height: 4.25vw;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 0.21vw solid rgba(76, 175, 80, .5);
+        }
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+    5% {
+        transform: rotate(-45deg);
+    }
+    12% {
+        transform: rotate(-405deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 0.05vw;
+        top: 1vw;
+    }
+    54% {
+        width: 0;
+        left: 0.05vw;
+        top: 1vw;
+    }
+    70% {
+        width: 2.66vw;
+        left: -0.42vw;
+        top: 1.96vw;
+    }
+    84% {
+        width: 0.9vw;
+        left: 1.11vw;
+        top: 2.55vw;
+    }
+    100% {
+        width: 1.33vw;
+        left: 0.74vw;
+        top: 2.39vw;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 2.44vw;
+        top: 2.87vw;
+    }
+    65% {
+        width: 0;
+        right: 2.44vw;
+        top: 2.87vw;
+    }
+    84% {
+        width: 2.92vw;
+        right: 0;
+        top: 1.86vw;
+    }
+    100% {
+        width: 2.5vw;
+        right: 0.42vw;
+        top: 2vw;
+    }
+}

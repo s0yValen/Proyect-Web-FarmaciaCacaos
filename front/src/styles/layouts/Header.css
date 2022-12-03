@@ -1,0 +1,318 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/*Encabezado*/
+.Rectangle-1 {
+  display: flex;
+  width: 100%;
+  height: 7.5vw;
+  background-color: #1f4e77;
+  justify-content: space-between;
+  top: 0;
+}
+
+/*Logo dimenciones*/
+.logo-1 {
+  margin-left: 3vw;
+  display: flex;
+  height: 6.3vw;
+  padding-top: 5%;
+  padding-right: auto;
+  padding-left: 5%;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.wrap {
+  margin: auto 2vw;
+}
+
+.search {
+  width: 40vw;
+  display: flex;
+  margin: auto;
+  /* padding-top: 3.5vw; */
+  /* margin-left: 9vw;
+  margin-right: 2vw; */
+}
+
+.searchTerm {
+  width: 40vw;
+  border: 0.026vw rgb(0, 0, 0);
+  border-right: none;
+  padding: 0.3vw;
+  height: 1.5vw;
+  border-radius: 0.26vw 0 0 0.26vw;
+  outline: none;
+  font-family: 'Inter';
+  font-size: 1vw;
+  box-shadow: 0 0.21vw 0.31vw 0 rgba(54, 54, 54, 0.5);
+}
+
+::-webkit-input-placeholder {
+  font-size: 1vw;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+.searchButton {
+  width: 2.60vw;
+  border: 0.03vw rgb(0, 0, 0);
+  background: #ffffff;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-radius: 0 0.26vw 0.26vw 0;
+  cursor: pointer;
+  font-size: 0.7vw;
+  box-shadow: 0 0.21vw 0.31vw 0 rgba(54, 54, 54, 0.5);
+}
+
+
+/*carrito*/
+
+/* .carrito {
+  margin-left: 5vw; 
+}*/
+
+.carrito div {
+  height: 6vw;
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+}
+
+.img-carrito {
+  /* margin: auto;
+  margin-left: 4vw; */
+  height: 5vw;
+  cursor: pointer;
+  padding-top: 2vw;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+/*Menu desplegable*/
+
+/*Dimenciones icono*/
+.MFLogin {
+  margin-left: 5vw;
+  margin-top: 0.7vw;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.MFLabel {
+  cursor: pointer;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 13vw;
+  margin: 2vw 0 1vw 1vw;
+  transition: .4s;
+  border-radius: 1.5vw;
+  /* margin-left: 2vw; */
+}
+
+.MFLabel:hover {
+  background-color: #153f64;
+}
+
+.MFLabel p {
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  margin: auto auto auto 1vw;
+}
+
+.MFLogged {
+  /* margin-left: -1vw; */
+  /* margin-top: 1.8vw; */
+  /* margin-left: 1.2vw; */
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+  /* border: 0.2vw solid #05B593; */
+  border-radius: 5vw;
+}
+
+/*Dimenciones contenedor*/
+.MFnav {
+  padding: 0;
+  width: 5vw;
+  height: 5vw;
+  background-color: #1f4e77;
+  position: relative;
+  margin-right: 13vw;
+}
+
+/*funcionalidad*/
+/* span {
+     display: block;
+     backdrop-filter: blur(1px);
+  } */
+
+li {
+  line-height: 1vw;
+}
+
+
+/*Cuadro desplegable*/
+.slide {
+  clear: both;
+  width: 15vw;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: max-height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  border-width: 0.13vw;
+  border-style: solid;
+  border-radius: 1.3vw;
+  border: solid 0.06vw rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  list-style-type: none;
+  padding-inline-start: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/*Texto nombre del usuario*/
+.text-menu {
+  font-size: 1.1vw;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  color: white;
+  padding: 0.8vw 0.6vw 0.3vw 0.6vw;
+  font-family: 'Inter', sans-serif;
+  text-align: start;
+  margin-left: 0.7vw;
+  font-weight: bold;
+
+}
+
+.input-menu {
+  font-size: 1vw;
+  border-radius: 1vw;
+  height: 1.5vw;
+  width: 12vw;
+  border-width: 0.2vw;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.registro {
+  color: #6E7779;
+  font-size: 1vw;
+}
+
+.registrate a {
+  text-decoration: underline;
+  color: #04b593;
+  font-size: 1vw;
+  display: block;
+  margin: 0.4vw 0.4vw 1.3vw 0.4vw;
+}
+
+/*Diseño boton salir*/
+.salir {
+  transition: 0.35s;
+  margin: 1.3vw;
+  width: 9.6vw;
+  height: 2.3vw;
+  border-radius: 0.6vw;
+  box-shadow: 0 0.26vw 0.26vw 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: #05b593;
+  font-size: 0.9vw;
+  color: white;
+  cursor: pointer;
+}
+
+.loggedbtn {
+  transition: 0.35s;
+  margin-top: 1.3vw;
+  width: 9.6vw;
+  height: 2.3vw;
+  border-radius: 0.6vw;
+  box-shadow: 0 0.26vw 0.26vw 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: #05b593;
+  font-size: 0.9vw;
+  color: white;
+  cursor: pointer;
+}
+
+.lastloggedbtn {
+  margin-bottom: 1.3vw;
+}
+
+.salir:hover {
+  background-color: #0a8169;
+}
+
+.loggedbtn:hover {
+  background-color: #0a8169;
+}
+
+/*funcionalidades*/
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+}
+
+#touch:checked+.slide {
+  max-height: 20vw;
+  box-shadow: 0 0.26vw 0.6vw 0.2vw rgb(0 0 0 / 35%);
+}
+
+/*PAGINACION TABLAS*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vw;
+  /* margin-left: 22vw; */
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 0.5vw;
+}
+
+.pagination a {
+  transition: ease-out 0.5s;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 1vw;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 0.2vh 0.7vw;
+  border: 0.21vh solid #1daba8;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #04B593;
+}
+
+.pagination a:hover {
+  color: white;
+  box-shadow: inset 0 -10.68vh 0 0 rgb(168, 88, 221);
+  border: 0.21vh solid #1daba8;
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  background-color: rgb(168, 88, 221);
+  border: 0.21vh solid #1daba8;
+  color: white;
+}

@@ -1,0 +1,11 @@
+.reviews {
+    margin: 0 1vw 2vw 2vw;
+    padding: 0;
+}
+
+.titulosD_usuario {
+    color: #05b593;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

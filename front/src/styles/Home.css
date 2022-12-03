@@ -1,0 +1,15 @@
+.Home{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainPag {
+  margin-bottom: 6vw;
+}
+
+
+
